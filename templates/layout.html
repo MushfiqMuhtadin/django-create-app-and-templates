@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 
+        {% block title%}
+           django app
+        {% endblock %}
+    </title>
+    {% load static%}
+    <link rel="stylesheet" href="{% static 'css/hoga.css' %}">
+
+</head>
+<body>
+
+    <nav>
+        <a href="/"> home </a>
+        <a href="/reading"> reading</a>
+        <a href="/posts"> posts </a>
+    </nav>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    
+</body>
+</html>

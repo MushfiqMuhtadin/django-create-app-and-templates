@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(197, 197, 236);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    background-color: rgb(85, 0, 255);
+}
